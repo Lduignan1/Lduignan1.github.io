@@ -2,10 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My GitHub Pages Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
+        nav { margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+        nav a { margin-right: 15px; text-decoration: none; color: blue; }
+        section { margin-top: 30px; }
+        form div { margin-bottom: 10px; }
+        input, textarea { width: 100%; padding: 8px; }
+    </style>
 </head>
 <body>
-    <h1>Hello World! This is my personal website.</h1>
-    <p>You can start adding your custom content here.</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="geography.html">Geography</a>
+        <a href="travels.html">Travels</a>
+        <a href="linguistics.html">Linguistics</a>
+        <a href="games.html">Games</a>
+    </nav>
+
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+        <p>Connect with me on: 
+            <a href="https://linkedin.com/in/Lduignan1" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/Lduignan1" target="_blank">GitHub</a>
+        </p>
+    </header>
+
+    <main>
+        <p>Hello! I'm a passionate explorer of the world, language, and digital realms. Use the links above to learn more about my specific interests.</p>
+
+        <section>
+            <h2>Send Me a Message</h2>
+            <form action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
+                <div>
+                    <label>Your Email:</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div>
+                    <label>Message:</label>
+                    <textarea name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
 </body>
 </html>
