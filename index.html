@@ -5,13 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
-        nav { margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
-        nav a { margin-right: 15px; text-decoration: none; color: blue; }
-        section { margin-top: 30px; }
-        form div { margin-bottom: 10px; }
-        input, textarea { width: 100%; padding: 8px; }
-    </style>
+        /* 1. Global Styles */
+        :root {
+            --primary-color: #2a52be; /* A nice Royal Blue */
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+    
+        /* 2. Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+    
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+    
+        nav a:hover {
+            color: #ff5722; /* Changes color when you hover */
+        }
+    
+        /* 3. Header & Sections */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    
+        section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+    
+        /* 4. Form Styling */
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensures padding doesn't break width */
+        }
+    
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    
+        button:hover {
+            background-color: #1a3a8a;
+        }
+        </style>
 </head>
 <body>
 
