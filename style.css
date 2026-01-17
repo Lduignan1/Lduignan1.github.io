@@ -77,3 +77,73 @@ button:hover {
     margin-bottom: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+/* 5. Content Page Styles */
+.tagline {
+    color: #666;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+.content-section {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+.content-section h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.content-section ul {
+    padding-left: 20px;
+}
+
+.content-section li {
+    margin-bottom: 8px;
+}
+
+/* 6. Tech Stack Grid */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.tech-card {
+    background: var(--bg-color);
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.tech-card h3 {
+    margin: 0 0 8px 0;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.tech-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* 7. Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #666;
+}
+
+footer a {
+    color: var(--primary-color);
+}
