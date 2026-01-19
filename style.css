@@ -78,7 +78,16 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* 5. Content Page Styles */
+/* 5. Gaelic Name */
+.gaelic-name {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+/* 6. Content Page Styles */
 .tagline {
     color: #666;
     font-size: 1.1rem;
@@ -109,7 +118,7 @@ button:hover {
     margin-bottom: 8px;
 }
 
-/* 6. Tech Stack Grid */
+/* 7. Tech Stack Grid */
 .tech-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -136,7 +145,7 @@ button:hover {
     color: #555;
 }
 
-/* 7. Footer */
+/* 8. Footer */
 footer {
     text-align: center;
     padding: 20px;
