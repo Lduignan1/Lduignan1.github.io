@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 
 /* 1. Global Styles */
 :root {
@@ -80,11 +81,12 @@ button:hover {
 
 /* 5. Gaelic Name */
 .gaelic-name {
-    font-family: 'Uncial Antiqua', cursive;
+    font-family: 'Uncial Antiqua', cursive !important;
     font-size: 1.4rem;
     color: var(--primary-color);
     margin-top: -5px;
     margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 /* 6. Content Page Styles */
