@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Liam Duignan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="assets/cv_duignan_01_2026.pdf">CV</a>
+        <a href="about.html">About Me</a>
+    </nav>
+
+    <header>
+        <h1>About Me</h1>
+        <p class="tagline">NLP engineering for large language model development</p>
+    </header>
+
+    <section class="content-section">
+        <h2>Data Collection & Curation for LLM Training</h2>
+        <p>A significant part of my work involves building pipelines to collect and curate high-quality training data for large language models. This includes:</p>
+        <ul>
+            <li><strong>Educational Content Extraction</strong> &ndash; Developing systems to collect French educational materials including K-12 mathematics exercises and multiple-choice questions from sources like Sesamath, Exo7, and Mathalea</li>
+            <li><strong>Academic Document Processing</strong> &ndash; Processing 200,000+ scientific papers and PhD theses from the HAL open science archive, producing approximately 7.7 billion tokens of French academic text</li>
+            <li><strong>LaTeX Parsing</strong> &ndash; Extracting and preserving mathematical content from LaTeX sources, handling complex notation and formula structures</li>
+            <li><strong>Ethical Web Scraping</strong> &ndash; Implementing crawlers that respect robots.txt rules and rate limits</li>
+            <li><strong>Dataset Publishing</strong> &ndash; Preparing and releasing datasets on HuggingFace Hub for the research community</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Document Processing & Format Conversion</h2>
+        <p>Converting documents between formats while preserving structure and mathematical notation is a core challenge in preparing LLM training data:</p>
+        <ul>
+            <li><strong>PDF-to-Markdown Conversion</strong> &ndash; Using tools like Docling to convert academic PDFs to markdown while maintaining document structure, tables, and code blocks</li>
+            <li><strong>Formula Handling</strong> &ndash; Validating and correcting LaTeX formulas using KaTeX, tracking error rates, and filtering malformed expressions</li>
+            <li><strong>Vision-based OCR</strong> &ndash; Working with multimodal models like DeepSeek-OCR for document understanding and text extraction from images</li>
+            <li><strong>Multi-stage Pipelines</strong> &ndash; Building processing chains that filter, transform, and clean content through HTML parsing, format conversion, and content reinsertion</li>
+            <li><strong>Text Encoding Fixes</strong> &ndash; Correcting character encoding issues common in French text processing (accents, punctuation)</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>LLM Evaluation</h2>
+        <p>Systematic evaluation is essential for understanding model capabilities. My work in this area includes:</p>
+        <ul>
+            <li><strong>Evaluation Frameworks</strong> &ndash; Building custom evaluation infrastructure using the LM Evaluation Harness on SLURM clusters</li>
+            <li><strong>Benchmark Coverage</strong> &ndash; Running 131+ task configurations including TruthfulQA, GSM8K, MMLU variants, IFEval, and reading comprehension tasks</li>
+            <li><strong>Multilingual Evaluation</strong> &ndash; Testing models across 25+ languages including Arabic, African languages (Swahili, Yoruba, Igbo), and European languages (French, German, Catalan, Basque)</li>
+            <li><strong>Distributed Evaluation</strong> &ndash; Managing SLURM job submission and multi-GPU evaluation across multiple models simultaneously</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Model Fine-tuning</h2>
+        <p>I have worked with advanced fine-tuning techniques for improving language model performance:</p>
+        <ul>
+            <li><strong>Self-Play Fine-Tuning (SPIN)</strong> &ndash; Implementing iterative self-improvement methods where models learn from their own generated outputs without additional human annotation</li>
+            <li><strong>Preference Learning</strong> &ndash; Training models to distinguish between high and low quality responses using preference-based objectives</li>
+            <li><strong>Distributed Training</strong> &ndash; Using DeepSpeed ZeRO-3 and Accelerate for efficient multi-GPU training on large models</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Technical Stack</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <h3>Python</h3>
+                <p>Primary language for all NLP work, data processing, and model development</p>
+            </div>
+            <div class="tech-card">
+                <h3>HuggingFace</h3>
+                <p>Transformers, Datasets, TRL, and the broader ecosystem for modern NLP</p>
+            </div>
+            <div class="tech-card">
+                <h3>PyTorch</h3>
+                <p>Deep learning framework for model training and inference</p>
+            </div>
+            <div class="tech-card">
+                <h3>Distributed Computing</h3>
+                <p>DeepSpeed, Accelerate, vLLM for efficient large-scale training and inference</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Current Work at CEA</h2>
+        <p>As an NLP Engineer at the French Alternative Energies and Atomic Energy Commission (CEA), I apply computational linguistics to real-world challenges. My work involves developing and evaluating language technologies that support the organization's research mission.</p>
+        <p>The role combines hands-on engineering with research-oriented thinking, requiring both practical implementation skills and a solid theoretical foundation in linguistics and machine learning.</p>
+    </section>
+
+    <footer>
+        <p>Interested in discussing NLP or computational linguistics? <a href="index.html#contact">Get in touch</a>.</p>
+    </footer>
+</body>
+</html>
